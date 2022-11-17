@@ -130,7 +130,9 @@ section {
   );
   border-bottom-left-radius: 30px;
   border-top-right-radius: 30px;
-  left: -10%;
+
+  left: -15%;
+
   width: 12%;
   height: 50%;
   align-items: center;
