@@ -1,0 +1,212 @@
+:root {
+  --text-color: wheat;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100vw;
+  height: 10vh;
+  position: fixed;
+  z-index: 5;
+  /* border: 3px white solid; */
+  top: -12%;
+  animation: menubarappear 1s ease-in-out forwards;
+}
+@keyframes menubarappear {
+  from {
+    top: -12%;
+  }
+  to {
+    top: 0%;
+  }
+}
+section {
+  background-image: url(cafe-background3.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0vh; 
+
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.menubar {
+  /* border: 2px white solid; */
+  display: flex;
+  position: absolute;
+
+  width: 100%;
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
+  background-color: crimson;
+}
+.menubar h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px white solid; */
+  color: white;
+  font-size: 2.5rem;
+  height: 10vh;
+  font-family: style script;
+}
+#logo {
+  position: absolute;
+  left: 0;
+  padding: 0px 5%;
+
+  font-size: 2rem;
+  /* border: 2px white solid; */
+}
+#logo a:hover {
+  text-decoration: none;
+}
+.menuicon {
+  position: absolute;
+  right: 0;
+  /* border: 2px white solid; */
+  height: 100%;
+  width: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0% 3%;
+}
+.menuicon img {
+  width: 50%;
+  height: 50%;
+  filter: invert(100%);
+  cursor: pointer;
+  /* border: 2px black solid; */
+}
+section {
+  display: flex;
+  position: absolute;
+}
+.chef-png {
+  position: fixed;
+  bottom: -40%;
+  right: 0%;
+
+  width: 30%;
+  z-index: 5;
+  animation: chef-appearance 1s ease-in-out forwards;
+  /* border: 2px white solid; */
+}
+@keyframes chef-appearance {
+  from {
+    bottom: -40%;
+  }
+  to {
+    bottom: 0%;
+  }
+}
+
+.table {
+  margin-top: 15vh;
+  /* border: 2px white solid; */
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  justify-content: center;
+}
+.timing-panel {
+  border: 2px white solid;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 4;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(255, 86, 120) 20%,
+    crimson
+  );
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  left: -20%;
+  width: 12%;
+  height: 50%;
+  align-items: center;
+  justify-content: space-around;
+  animation: timingpanel 1s ease-in-out forwards;
+}
+@keyframes timingpanel {
+  from {
+    left: -20%;
+  }
+  to {
+    left: 2.2%;
+  }
+}
+.timing-panel h2,
+h3 {
+  color: white;
+  /* border: 2px white solid; */
+  font-family: style script;
+  /* margin-bottom: 20%; */
+}
+
+.menutable {
+  display: flex;
+  /* border: 2px white solid; */
+  position: relative;
+  z-index: 3;
+  right: -100%;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  animation: appear 1s ease-in-out forwards;
+}
+@keyframes appear {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0%;
+  }
+}
+
+.menutable th {
+  border: 1px wheat solid;
+  padding: 2vh 0vw;
+  font-size: 1.5rem;
+  color: whitesmoke;
+  font-family: style script;
+  background-color: darkolivegreen;
+}
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+a:hover {
+  text-decoration: underline;
+}
+.menutable td {
+  border: 1px wheat solid;
+
+  padding: 2vh 5vw;
+  font-size: 1.2rem;
+  font-family: style script;
+  color: whitesmoke;
+  text-align: center;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(255, 59, 59),
+    rgb(255, 123, 0)
+  );
+  cursor: pointer;
+}
+.menutable td:hover {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(255, 123, 0),
+    rgb(255, 59, 59)
+  );
+}
