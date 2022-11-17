@@ -131,7 +131,7 @@ section {
   border-bottom-left-radius: 30px;
   border-top-right-radius: 30px;
 
-  left: -15%;
+  left: -10%;
 
   width: 12%;
   height: 50%;
@@ -141,10 +141,10 @@ section {
 }
 @keyframes timingpanel {
   from {
-    left: -10%;
+    left: 10%;
   }
   to {
-    left: 2.2%;
+    left: 1.2%;
   }
 }
 .timing-panel h2,
